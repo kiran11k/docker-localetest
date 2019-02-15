@@ -1,0 +1,6 @@
+FROM openjdk:8-jdk
+
+ADD build/libs/locale-test-all-1.0.jar /app/
+WORKDIR /app
+
+CMD ["java", "-jar", "locale-test-all-1.0.jar"]
